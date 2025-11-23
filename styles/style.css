@@ -47,7 +47,6 @@
 .rec {
   position: absolute;
   color: var(--decoration-color);
-  right: 28px;
   line-height: 25px;
   font-size: var(--main-font-size);
   font-weight: 400;
