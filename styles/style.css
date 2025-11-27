@@ -8,7 +8,7 @@
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-color: var(--background-color);
-  font-family: var(--main-font, "IBM Plex mono"), sans-serif;
+  font-family: var(--main-font), sans-serif;
   font-size: var(--main-font-size);
 }
 
@@ -79,7 +79,7 @@
   border: none;
   font-size: var(--main-font-size);
   line-height: 18px;
-  font-family: var(--main-font);
+  font-family: var(--main-font), sans-serif;
   text-transform: lowercase;
   color: var(--answer-color);
   font-weight: 400;
@@ -114,7 +114,7 @@
 
 .big_title {
   color: var(--pink-color);
-  font-family: inherit;
+  font-family: var(--main-font), sans-serif;
   font-weight: 700;
   line-height: 83%;
   font-size: var(--font-size-big-title);
@@ -127,7 +127,7 @@
 
 .header__text-paragraph {
   font-weight: 700;
-  font-family: var(--main-font);
+  font-family: var(--main-font), sans-serif;
   font-size: var(--main-font-size);
   line-height: var(--main-line-height);
 }
@@ -142,7 +142,7 @@
 .main {
   padding: 0 var(--page-padding);
   font-size: var(--main-font-size);
-  font-family: var(--main-font);
+  font-family: var(--main-font), sans-serif;
   color: var(--soft-rose);
 }
 
@@ -151,7 +151,7 @@
   margin-block-end: var(--content-margin-block-end);
 }
 
-.question {
+.section-title {
   font-weight: 700;
   font-size: inherit;
   line-height: var(--main-line-height);
@@ -159,7 +159,7 @@
 }
 
 .answer_title {
-  font-family: inherit;
+  font-family: var(--main-font), sans-serif;
   font-size: inherit;
   font-weight: 700;
   line-height: var(--main-line-height);
@@ -169,7 +169,7 @@
 
 .big_answer {
   margin-block-start: 10px;
-  font-family: inherit;
+  font-family: var(--main-font), sans-serif;
   font-weight: 400;
   line-height: var(--main-line-height);
 }
@@ -185,6 +185,10 @@
 
 .text__link:focus-visible {
   outline: 1px solid var(--soft-rose);
+}
+
+.title_regular {
+  font-weight: 400;
 }
 
 /* КАРТИНОЧКИ */
@@ -219,7 +223,7 @@
   justify-self: center;
   align-self: center;
   color: var(--pink-color);
-  font-family: inherit;
+  font-family: var(--main-font), sans-serif;
   font-weight: 700;
   line-height: 83%;
   font-size: var(--font-size-big-title);
@@ -234,10 +238,12 @@
     padding-inline-start: 0;
     margin-block-end: 40px;
   }
+
   .decorated-zone::before {
     right: 20px;
     top: 20px;
   }
+
   .decorated-zone::after {
     left: 20px;
     bottom: 20px;
@@ -247,14 +253,17 @@
     top: 20px;
     right: 50px;
   }
+
   .big_title {
     font-size: var(--font-size-big-title);
   }
+
   .header__text {
     width: calc(50% - 10px);
     justify-self: end;
   }
-  .main .content_section:nth-child(odd):not(:last-child) {
+
+  .two-columns { 
     display: grid;
     grid-template-columns: 1fr 2fr;
     grid-template-rows: 1fr;
@@ -271,7 +280,7 @@
     justify-self: end;
   }
 
-  .question {
+  .section-title {
     margin-block-start: 20px;
     inline-size: 236px;
   }
@@ -335,7 +344,7 @@
     flex-direction: row;
   }
 
-  .question {
+  .section-title {
     inline-size: 315px;
   }
 
