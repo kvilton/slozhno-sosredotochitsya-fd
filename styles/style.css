@@ -188,7 +188,12 @@
 }
 
 .title_regular {
+  font-family: var(--main-font), sans-serif;
+  font-size: inherit;
   font-weight: 400;
+  line-height: var(--main-line-height);
+  margin-block-start: var(--answer-margin-block-start);
+  margin-block-end: var(--answer-margin-block-end);
 }
 
 /* КАРТИНОЧКИ */
@@ -263,14 +268,14 @@
     justify-self: end;
   }
 
-  .two-columns {
+  .special_section {
     display: grid;
     grid-template-columns: 1fr 2fr;
     grid-template-rows: 1fr;
     gap: var(--space-m);
   }
 
-  .content_section:nth-child(2) {
+  .concentration_section {
     display: grid;
     grid-template-columns: 1fr;
     margin-block-start: 20px;
@@ -348,7 +353,7 @@
     inline-size: 315px;
   }
 
-  .main .content_section:nth-child(odd):not(:last-child) {
+  .special_section {
     gap: var(--space-s);
   }
 
