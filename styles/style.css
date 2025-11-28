@@ -279,6 +279,7 @@
     display: grid;
     grid-template-columns: 1fr;
     margin-block-start: 20px;
+    margin-block-end: 100px;
   }
 
   .answer {
@@ -288,10 +289,6 @@
   .section-title {
     margin-block-start: 20px;
     inline-size: 236px;
-  }
-
-  .concentration_section {
-    margin-block-end: 100px;
   }
 
   /* КАРТИНКИ */
